@@ -1,0 +1,23 @@
+{
+  "name": "hypertail",
+  "version": "0.1.0",
+  "description": "tail(1) for hypercore",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js | faucet"
+  },
+  "author": "harry lachenmayer <harrylachenmayer@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hypercore": "^6.9.2",
+    "hyperdiscovery": "^6.0.4",
+    "minimist": "^1.2.0",
+    "random-access-memory": "^2.4.0"
+  },
+  "devDependencies": {
+    "execa": "^0.8.0",
+    "faucet": "0.0.1",
+    "pify": "^3.0.0",
+    "tape": "^4.8.0"
+  }
+}
