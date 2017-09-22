@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const hypercore = require('hypercore')
 const swarm = require('hyperdiscovery')
 const minimist = require('minimist')

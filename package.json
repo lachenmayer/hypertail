@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "tail(1) for hypercore",
   "main": "index.js",
+  "bin": "index.js",
   "scripts": {
     "test": "node test.js | faucet"
   },

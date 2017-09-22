@@ -1,8 +1,20 @@
 # hypertail
 
-> tail(1) for hypercore
+> tail(1) for [hypercore](https://github.com/mafintosh/hypercore)
 
 Print the last few blocks of a hypercore feed to stdout, and follow along with updates if you feel like it.
+
+## Example
+
+![Example screenshot](https://hypertail-lachenmayer.hashbase.io/screenshot.png)
+
+The example screenshot shows a [hyperirc](https://github.com/mafintosh/hyperirc) mirror of the #dat IRC channel.
+
+Try it yourself by running:
+
+```
+hypertail -f 227d9212ee85c0f14416885c5390f2d270ba372252e781bf45a6b7056bb0a1b5
+```
 
 ## Usage
 
@@ -22,6 +34,10 @@ options:
 ```
 npm install -g hypertail
 ```
+
+## Dat URL
+
+dat://a68687a7cd38ab628adcf479709e9d0d67a14396b9cc80211ef5db00288fb9e5
 
 ## Maintainers
 
