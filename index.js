@@ -41,12 +41,12 @@ if (argv.n.length < 1) {
 }
 
 const storage = file => ram()
-const feed = hypercore(storage, key)
+const feed = hypercore(storage, key, {sparse: true})
 
 feed.once('ready', () => {
   swarm(feed)
 
-  feed.once('append', () => {
+  feed.update(() => {
     const live = argv.f
     const n = Number.parseInt(argv.n)
     const start = argv.n[0] === '+' ? n : Math.max(feed.length - Math.abs(n), 0)
